@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моё портфолио</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
+        h1 { color: #4a90e2; }
+        p { font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h1>Привет! Я Тимофей 👋</h1>
+    <p>Это мой сайт-портфолио на GitHub Pages.</p>
+    <p>Здесь скоро будут проекты и контакты.</p>
+</body>
+</html>
