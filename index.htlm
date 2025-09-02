@@ -1,18 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Моё портфолио</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; text-align: center; }
-        h1 { color: #4a90e2; }
-        p { font-size: 18px; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Моё портфолио</title>
+  <style>
+    /* Фон градиент */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #4a90e2, #9013fe);
+      color: white;
+      overflow-x: hidden;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    /* Анимация появления */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    /* Ссылка на GitHub */
+    .github-link img {
+      width: 50px;
+      height: 50px;
+      transition: transform 0.3s;
+    }
+
+    .github-link img:hover {
+      transform: scale(1.1);
+    }
+
+    /* Footer */
+    footer {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9em;
+      color: rgba(255, 255, 255, 0.8);
+    }
+  </style>
 </head>
 <body>
-    <h1>Привет! Я Тимофей 👋</h1>
-    <p>Это мой сайт-портфолио на GitHub Pages.</p>
-    <p>Здесь скоро будут проекты и контакты.</p>
+  <h1>Привет! 👋</h1>
+  <p>Это мой сайт-портфолио. Скоро здесь будут проекты!</p>
+
+  <!-- Ссылка на GitHub -->
+  <a class="github-link" href="https://github.com/BEL41K" target="_blank">
+    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Все права защищены
+  </footer>
 </body>
 </html>
