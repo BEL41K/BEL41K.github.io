@@ -26,6 +26,24 @@
       to { opacity: 1; transform: translateY(0); }
     }
 
+    /* Анимация махания руки */
+    @keyframes waveHand {
+      0% { transform: rotate(0deg); }
+      10% { transform: rotate(20deg); }
+      20% { transform: rotate(-10deg); }
+      30% { transform: rotate(20deg); }
+      40% { transform: rotate(-5deg); }
+      50% { transform: rotate(10deg); }
+      60% { transform: rotate(0deg); }
+      100% { transform: rotate(0deg); }
+    }
+
+    .wave {
+      display: inline-block;
+      animation: waveHand 2s infinite;
+      transform-origin: 70% 70%;
+    }
+
     h1 {
       font-size: 3em;
       margin-bottom: 10px;
@@ -36,9 +54,15 @@
       font-size: 1.2em;
       margin-bottom: 40px;
       text-align: center;
+      animation: fadeIn 1.5s 0.3s backwards;
     }
 
     /* Ссылка на GitHub */
+    .github-link {
+      opacity: 0;
+      animation: fadeIn 1.5s 1s forwards;
+      display: inline-block;
+    }
     .github-link img {
       width: 50px;
       height: 50px;
@@ -46,7 +70,7 @@
     }
 
     .github-link img:hover {
-      transform: scale(1.1);
+      transform: scale(1.1) rotate(-10deg);
     }
 
     /* Footer */
@@ -57,11 +81,12 @@
       text-align: center;
       font-size: 0.9em;
       color: rgba(255, 255, 255, 0.8);
+      animation: fadeIn 1.5s 1.5s backwards;
     }
   </style>
 </head>
 <body>
-  <h1>Привет! 👋</h1>
+  <h1>Привет! <span class="wave">👋</span></h1>
   <p>Это мой сайт-портфолио. Скоро здесь будут проекты!</p>
 
   <!-- Ссылка на GitHub -->
